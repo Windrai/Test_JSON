@@ -4,6 +4,7 @@
 
 Ce projet a pour objectif de tester un **composant logiciel** qui lit une base de données SQLite représentant des messages d’une messagerie, et génère en sortie un fichier `.json` par message. Chaque fichier JSON doit respecter un format précis.
 Ne disposant pas du code à tester, je me suis focalisé sur l'implémentation des tests visant les notamment les fichiers de sorties (les fichiers JSON), que j'ai simulé. 
+Les protocoles de test sont présentés dans `protocole_test_json.md`.
 
 ---
 
