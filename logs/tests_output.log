@@ -1,0 +1,52 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.7, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/domer/test_sql
+plugins: typeguard-4.3.0
+collecting ... collected 6 items
+
+test_json.py::test_tc3_id_valid FAILED                                   [ 16%]
+test_json.py::test_tc4_content_base64 FAILED                             [ 33%]
+test_json.py::test_tc5_direction_valid FAILED                            [ 50%]
+test_json.py::test_tc6_timestamp_valid FAILED                            [ 66%]
+test_json.py::test_tc7_contact_valid FAILED                              [ 83%]
+test_json.py::test_tc11_json_valid_format PASSED                         [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_tc3_id_valid _______________________________
+test_json.py:23: in test_tc3_id_valid
+    pytest.fail("\n" + "\n".join(all_errors))
+E   Failed: 
+E   message_bad_types.json : id manquant ou mauvais type
+E   message_sans_id.json : id manquant ou mauvais type
+___________________________ test_tc4_content_base64 ____________________________
+test_json.py:46: in test_tc4_content_base64
+    pytest.fail("\n" + "\n".join(all_errors))
+E   Failed: 
+E   message_6.json : content manquant
+E   message_8.json : Mauvais encodage. Dois être en Base64
+___________________________ test_tc5_direction_valid ___________________________
+test_json.py:59: in test_tc5_direction_valid
+    pytest.fail("\n" + "\n".join(all_errors))
+E   Failed: 
+E   message_3.json : direction manquante ou mauvais type
+E   message_bad_types.json : direction manquante ou mauvais type
+___________________________ test_tc6_timestamp_valid ___________________________
+test_json.py:70: in test_tc6_timestamp_valid
+    pytest.fail("\n" + "\n".join(all_errors))
+E   Failed: 
+E   message_5.json : timestamp manquant ou mauvais type
+E   message_bad_types.json : timestamp manquant ou mauvais type
+____________________________ test_tc7_contact_valid ____________________________
+test_json.py:81: in test_tc7_contact_valid
+    pytest.fail("\n" + "\n".join(all_errors))
+E   Failed: 
+E   message_bad_types.json : contact manquant ou mauvais type
+E   message_4.json : contact manquant ou mauvais type
+=========================== short test summary info ============================
+FAILED test_json.py::test_tc3_id_valid - Failed: 
+FAILED test_json.py::test_tc4_content_base64 - Failed: 
+FAILED test_json.py::test_tc5_direction_valid - Failed: 
+FAILED test_json.py::test_tc6_timestamp_valid - Failed: 
+FAILED test_json.py::test_tc7_contact_valid - Failed: 
+========================= 5 failed, 1 passed in 0.02s ==========================
