@@ -87,7 +87,7 @@ def test_tc11_json_valid_format():
         if not file_name.endswith(".json"):
             continue # Si ce n'est pas un .json on skip
         try:
-            with open(os.path.join(OUTPUT_DIR, file_name), "r", encoding="utf-8") as f:
+            with open(os.path.join("../JSON_MAL_FORME", file_name), "r", encoding="utf-8") as f:
                 json.load(f)
         except json.JSONDecodeError: # Erreur de parsing levée
             all_errors.append(f"{file_name} : JSON malformé")
