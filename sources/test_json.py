@@ -7,7 +7,7 @@ import pytest
 OUTPUT_DIR = "../JSON_OUTPUT"
 
 
-#
+
 #On vérifie la présence de chaque données nécessaires dans le fichier JSON ainsi que leur type
 
 # TC3 – ID correct
@@ -83,7 +83,7 @@ def test_tc7_contact_valid():
 # TC11 – Fichier JSON bien formé
 def test_tc11_json_valid_format():
     all_errors = []
-    for file_name in os.listdir(OUTPUT_DIR):
+    for file_name in os.listdir("../JSON_MAL_FORME"):
         if not file_name.endswith(".json"):
             continue # Si ce n'est pas un .json on skip
         try:

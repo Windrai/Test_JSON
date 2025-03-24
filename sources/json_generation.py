@@ -81,6 +81,7 @@ def create_json_output() :
             "content": base64.b64encode("Bonjour, vous allez bien?".encode()).decode(),
             "contact": 4
         }
+        
     ]
 
     for msg in messages:
