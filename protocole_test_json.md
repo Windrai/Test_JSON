@@ -58,9 +58,8 @@ J'ai implémenté les cas test TC3 à 7 et TC11 dans `sources/test_json.py`
 
 ---
 
-## Annexes (optionnelles)
+## Annexes
 
-- Jeux de données SQLite de test (`bdd_test.sqlite`)
 - Scripts de validation (ex: script Python pour valider les fichiers JSON)
 - Rapport de test (résultats, erreurs rencontrées, logs)
 
